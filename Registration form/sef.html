@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="sef.css">
+</head>
+<body>
+    <div class="container">
+        <center><h1>Enrollement Form</h1></center><hr>
+        <div class="wrapper">
+            
+            <form id="form">
+                <table class="table">
+                    <tr>
+                        <td>Name : </td>
+                        <td ><input  type="text" name="name" id="name" ></td>
+                    </tr>
+                    <tr>
+                        <td>Email : </td>
+                        <td ><input  type="email" name="email" id="email" ></td>
+                    </tr>
+                    <tr>
+                        <td>Website Link : </td>
+                        <td ><input  type="url" name="link" id="url"> <a href=" "></a></td>
+                    </tr>
+                    <tr>
+                        <td>Image : </td>
+                        <td ><input  type="text" name="image" id="image"></td>
+                    </tr>
+                    
+                        <td>Gender : </td>
+                        <td ><input type="radio" class="gender" name="gender" id="male" value="Male">Male
+                            <input class="gender" type="radio" name="gender" id="female" value="Female">Female</td>
+                
+                    <tr>
+                        <td>Skills : </td>
+                        <td >
+                            <span><input type="checkbox" name="skill" class="skill"  value="HTML">HTML </span>
+                            <span><input class="skill" type="checkbox" name="skill"  value="JAVA">JAVA</span>
+                            <span><input class="skill" type="checkbox" name="skill" value="CSS" >CSS </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td  class="button"><input class="btn" type="button" onclick="fun()" value="Submit"></td>
+                    </tr>
+                    <tr>
+                        <td  class="button"><input class="btn2" type="reset" value="Reset"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+        <div class="enrolled" id="enroll">
+        <center><h1>Enrolled Students</h1></center><hr>
+           
+            <div class="data" id="data">
+                
+            </div> 
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="sef.js"></script>
+</body>
+</html>
